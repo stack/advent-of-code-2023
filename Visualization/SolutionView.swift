@@ -18,7 +18,7 @@ public struct SolutionView: View {
         case error
     }
     
-    @EnvironmentObject var context: SolutionContext
+    @Environment(SolutionContext.self) private var context
     
     @State private var status: Status = .ready
     
@@ -90,14 +90,5 @@ public struct SolutionView: View {
                 status = .done
             }
         }
-    }
-}
-
-struct SolutionView_Previews: PreviewProvider {
-    static var previews: some View {
-        let context = SolutionContext(width: 400, height: 400, frameRate: 30)
-        
-        SolutionView()
-            .environmentObject(context)
     }
 }

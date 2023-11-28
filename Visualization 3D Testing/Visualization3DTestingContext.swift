@@ -6,6 +6,7 @@
 //  SPDX-License-Identifier: MIT
 //
 
+import CoreText
 import Foundation
 import QuartzCore
 import Visualization
@@ -13,21 +14,50 @@ import simd
 
 class Visualization3DTestingContext: Solution3DContext {
     
+    enum Mode: String, Hashable, CaseIterable, Identifiable {
+        case boxes
+        case spheres
+        case metalSpheres
+        case stoneBlock
+        case vikingRoom
+        case shiba
+        case chaos
+        case instances
+        case fancyBoxes
+        case generatedTextures
+        
+        var id: String { return self.rawValue }
+    }
+    
+    public var mode: Mode = .boxes
+    
     override var name: String {
         "Visualization 3D Testing"
     }
     
     override func run() async throws {
-        // try runBoxes()
-        // try runSpheres()
-        // try runMetalSpheres()
-        // try runStoneBlock()
-        // try runVikingRoom()
-        // try runShiba()
-        // try runChaos()
-        // try runInstances()
-        // try runFancyBoxes()
-        // try runGeneratedTextures()
+        switch mode {
+        case .boxes:
+            try runBoxes()
+        case .spheres:
+            try runSpheres()
+        case .metalSpheres:
+            try runMetalSpheres()
+        case .stoneBlock:
+            try runStoneBlock()
+        case .vikingRoom:
+            try runVikingRoom()
+        case .shiba:
+            try runShiba()
+        case .chaos:
+            try runChaos()
+        case .instances:
+            try runInstances()
+        case .fancyBoxes:
+            try runFancyBoxes()
+        case .generatedTextures:
+            try runFancyBoxes()
+        }
     }
     
     private func runGeneratedTextures() throws {
@@ -35,7 +65,7 @@ class Visualization3DTestingContext: Solution3DContext {
             let rect = CGRect(x: 0, y: 0, width: context.width, height: context.height)
             let text = "M"
             let font = NativeFont(name: "Chalkduster", size: 40.0)
-            let color = CGColor.white
+            let color = CGColor(gray: 1.0, alpha: 1.0)
             
             let finalRect = CGRect(x: rect.origin.x, y: CGFloat(context.height) - rect.origin.y - rect.size.height, width: rect.size.width, height: rect.size.height)
             

@@ -135,10 +135,3 @@ struct SolutionRenderView: ViewControllerRepresentable {
     
 #endif
 }
-
-struct SolutionRenderView_Previews: PreviewProvider {
-    static var previews: some View {
-        SolutionRenderView(renderer: SolutionRenderer())
-            .frame(width: 300, height: 300)
-    }
-}

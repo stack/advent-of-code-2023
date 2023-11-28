@@ -11,15 +11,15 @@ import Combine
 import Foundation
 import Utilities
 
-open class SolutionContext: ObservableObject {
+@Observable open class SolutionContext {
     
     // MARK: - Properties
     
-    @Published public var width: Int
-    @Published public var height: Int
-    @Published public var frameRate: Double
+    public var width: Int
+    public var height: Int
+    public var frameRate: Double
     
-    @Published public var isPrepapred: Bool = false
+    public var isPrepapred: Bool = false
     
     let renderer = SolutionRenderer()
     
