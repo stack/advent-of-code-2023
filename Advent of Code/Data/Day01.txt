@@ -1,30 +1,3 @@
-//
-//  Data.swift
-//  Day01
-//
-//  Created by Stephen H. Gerstacker on 2023-11-29.
-//
-
-import Foundation
-
-let SampleData1 = """
-1abc2
-pqr3stu8vwx
-a1b2c3d4e5f
-treb7uchet
-"""
-
-let SampleData2 = """
-two1nine
-eightwothree
-abcone2threexyz
-xtwone3four
-4nineeightseven2
-zoneight234
-7pqrstsixteen
-"""
-
-let InputData = """
 23krgjlpone
 kfxone67bzb2
 8jjpseven
@@ -1025,4 +998,3 @@ vggvnhqkjseventwo4onetwonftrnd
 mxhnceightfiveftmcdpgv63two6four
 nine6five181
 sevenbsixsbzmone55
-"""
