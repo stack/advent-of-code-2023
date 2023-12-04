@@ -13,7 +13,8 @@ import Foundation
 let allChallenges: [any AdventDay] = [
     Day1(),
     Day2(),
-    Day3()
+    Day3(),
+    Day4()
 ]
 
 @main
