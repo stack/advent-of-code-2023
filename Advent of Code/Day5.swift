@@ -42,7 +42,7 @@ struct Day5: AdventDay {
             return source - sourceRange.lowerBound + destinationRange.lowerBound
         }
         
-        func split(source: Range<Int>) -> [Range<Int>] {
+        func split(source: Range<Int>) -> (Range<Int>, [Range<Int>]) {
             var results: [Range<Int>] = []
             
             if source.lowerBound < sourceRange.lowerBound {
@@ -55,10 +55,9 @@ struct Day5: AdventDay {
             
             let lhs = max(sourceRange.lowerBound, source.lowerBound) + distance
             let rhs = min(sourceRange.upperBound, source.upperBound) + distance
+            let converted = lhs ..< rhs
             
-            results.append(lhs ..< rhs)
-            
-            return results
+            return (converted, results)
         }
     }
     
@@ -149,17 +148,21 @@ struct Day5: AdventDay {
             var nextSeedGroups: [Range<Int>] = []
             let mapList = maps[name]!
             
+            print("\(name):")
             print("Ranges In: \(currentSeedGroups)")
             
-            for seedGroup in currentSeedGroups {
-                if let map = mapList.first(where: { $0.intersects(source: seedGroup) }) {
+            while !currentSeedGroups.isEmpty {
+                let currentSeedGroup = currentSeedGroups.removeFirst()
+                
+                if let map = mapList.first(where: { $0.intersects(source: currentSeedGroup) }) {
                     // print("Map \(map) intersects with \(seedGroup)")
-                    let results = map.split(source: seedGroup)
+                    let (modified, others) = map.split(source: currentSeedGroup)
                     // print("Results: \(results)")
-                    nextSeedGroups.append(contentsOf: results)
+                    nextSeedGroups.append(modified)
+                    currentSeedGroups.append(contentsOf: others)
                 } else {
                     // print("Direct transfer of \(seedGroup)")
-                    nextSeedGroups.append(seedGroup)
+                    nextSeedGroups.append(currentSeedGroup)
                 }
             }
             
