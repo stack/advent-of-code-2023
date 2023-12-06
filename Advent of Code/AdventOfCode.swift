@@ -11,10 +11,7 @@ import Foundation
 
 // Add each new day implementation to this array:
 let allChallenges: [any AdventDay] = [
-    Day1(),
-    Day2(),
-    Day3(),
-    Day4()
+    Day1(), Day2(), Day3(), Day4(), Day5()
 ]
 
 @main
@@ -26,7 +23,7 @@ struct AdventOfCode: AsyncParsableCommand {
     var benchmark: Bool = false
     
     @Flag(inversion: .prefixedNo, help: "Use sample data instead of the given input data")
-    var sampleData: Bool = false
+    var sampleData: Bool = true
 
     /// The selected day, or the latest day if no selection is provided.
     var selectedChallenge: any AdventDay {
