@@ -129,7 +129,7 @@ struct Day5: AdventDay {
     }
     
     func part2() async throws -> Any {
-        var seedGroups = self.seeds.chunks(ofCount: 2).map {
+        let seedGroups = self.seeds.chunks(ofCount: 2).map {
             let start = $0[$0.startIndex]
             let count = $0[$0.index(after: $0.startIndex)]
             
