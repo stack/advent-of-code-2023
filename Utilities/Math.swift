@@ -8,6 +8,10 @@
 
 import Foundation
 
+public func lcm<T: SignedInteger>(_ a: T, _ b: T) -> T {
+    abs(a) * (abs(b) / gcd(a, b))
+}
+
 public func gcd<T: SignedInteger>(_ a: T, _ b: T) -> T {
     let r = a % b
     
