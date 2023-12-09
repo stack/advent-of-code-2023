@@ -3,6 +3,7 @@
 //  Advent of Code
 //
 //  Created by Stephen H. Gerstacker on 2023-12-07.
+//  SPDX-License-Identifier: MIT
 //
 
 import Foundation
