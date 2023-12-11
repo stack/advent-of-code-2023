@@ -15,6 +15,9 @@
 		D1241C552B268AB900E2D77F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D1241C542B268AB900E2D77F /* Preview Assets.xcassets */; };
 		D1241C5A2B268B2900E2D77F /* VisualizationContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1241C592B268B2900E2D77F /* VisualizationContext.swift */; };
 		D1241C5D2B268C2800E2D77F /* Day10.txt in Resources */ = {isa = PBXBuildFile; fileRef = D1241C432B262F6A00E2D77F /* Day10.txt */; };
+		D1241C5F2B273D9900E2D77F /* Day11.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1241C5E2B273D9900E2D77F /* Day11.swift */; };
+		D1241C622B277DC700E2D77F /* Day11.txt in CopyFiles */ = {isa = PBXBuildFile; fileRef = D1241C612B273EE700E2D77F /* Day11.txt */; };
+		D1241C632B277DC700E2D77F /* Sample11.txt in CopyFiles */ = {isa = PBXBuildFile; fileRef = D1241C602B273ED700E2D77F /* Sample11.txt */; };
 		D1AA26752B1439BE0023310B /* Utilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1AA266C2B1439BE0023310B /* Utilities.framework */; };
 		D1AA26832B1439E40023310B /* AdventOfCodeError.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1AA26822B1439E40023310B /* AdventOfCodeError.swift */; };
 		D1AA26872B143A390023310B /* Math.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1AA26862B143A390023310B /* Math.swift */; };
@@ -221,6 +224,7 @@
 				D1D9EB262B2349EA00C9DD43 /* Day08.txt in CopyFiles */,
 				D1D9EB2C2B24C79B00C9DD43 /* Day09.txt in CopyFiles */,
 				D1241C442B262F8000E2D77F /* Day10.txt in CopyFiles */,
+				D1241C622B277DC700E2D77F /* Day11.txt in CopyFiles */,
 				D1D9EADC2B1AD63D00C9DD43 /* Sample01.txt in CopyFiles */,
 				D1D9EAE02B1BBCCA00C9DD43 /* Sample02.txt in CopyFiles */,
 				D1D9EAE62B1CD5AA00C9DD43 /* Sample03.txt in CopyFiles */,
@@ -231,6 +235,7 @@
 				D1D9EB272B2349EA00C9DD43 /* Sample08.txt in CopyFiles */,
 				D1D9EB2D2B24C79B00C9DD43 /* Sample09.txt in CopyFiles */,
 				D1241C452B262F8000E2D77F /* Sample10.txt in CopyFiles */,
+				D1241C632B277DC700E2D77F /* Sample11.txt in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,6 +262,9 @@
 		D1241C522B268AB900E2D77F /* Day_10_Visualization.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Day_10_Visualization.entitlements; sourceTree = "<group>"; };
 		D1241C542B268AB900E2D77F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		D1241C592B268B2900E2D77F /* VisualizationContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisualizationContext.swift; sourceTree = "<group>"; };
+		D1241C5E2B273D9900E2D77F /* Day11.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day11.swift; sourceTree = "<group>"; };
+		D1241C602B273ED700E2D77F /* Sample11.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = Sample11.txt; sourceTree = "<group>"; };
+		D1241C612B273EE700E2D77F /* Day11.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = Day11.txt; sourceTree = "<group>"; };
 		D1AA266C2B1439BE0023310B /* Utilities.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Utilities.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1AA26742B1439BE0023310B /* Utilities Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Utilities Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1AA26822B1439E40023310B /* AdventOfCodeError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdventOfCodeError.swift; sourceTree = "<group>"; };
@@ -621,6 +629,7 @@
 				D1D9EB222B23493B00C9DD43 /* Day8.swift */,
 				D1D9EB282B24C69400C9DD43 /* Day9.swift */,
 				D1241C402B262E7700E2D77F /* Day10.swift */,
+				D1241C5E2B273D9900E2D77F /* Day11.swift */,
 				D1D9EAD82B1A752800C9DD43 /* Data */,
 			);
 			path = "Advent of Code";
@@ -639,6 +648,7 @@
 				D1D9EB252B2349DC00C9DD43 /* Day08.txt */,
 				D1D9EB2B2B24C78C00C9DD43 /* Day09.txt */,
 				D1241C432B262F6A00E2D77F /* Day10.txt */,
+				D1241C612B273EE700E2D77F /* Day11.txt */,
 				D1D9EADB2B1A77C900C9DD43 /* Sample01.txt */,
 				D1D9EADF2B1BBCAB00C9DD43 /* Sample02.txt */,
 				D1D9EAE52B1CD5A300C9DD43 /* Sample03.txt */,
@@ -649,6 +659,7 @@
 				D1D9EB242B2349BA00C9DD43 /* Sample08.txt */,
 				D1D9EB2A2B24C6C000C9DD43 /* Sample09.txt */,
 				D1241C422B262F4F00E2D77F /* Sample10.txt */,
+				D1241C602B273ED700E2D77F /* Sample11.txt */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -1063,6 +1074,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D1D9EAD52B1A608200C9DD43 /* AdventDay.swift in Sources */,
+				D1241C5F2B273D9900E2D77F /* Day11.swift in Sources */,
 				D1D9EB232B23493B00C9DD43 /* Day8.swift in Sources */,
 				D1D9EB172B20A4FC00C9DD43 /* Day6.swift in Sources */,
 				D1D9EAF42B1F9A3300C9DD43 /* Day5.swift in Sources */,
