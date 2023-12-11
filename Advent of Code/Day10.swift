@@ -1,8 +1,9 @@
 //
 //  Day10.swift
-//  Advent of Code
+//  Advent of Code 2023
 //
 //  Created by Stephen H. Gerstacker on 2023-12-10.
+//  SPDX-License-Identifier: MIT
 //
 
 import Foundation
@@ -115,7 +116,6 @@ struct Day10: AdventDay {
             
             map[start.y][start.x] = determineType(from: start, in: map)
             
-            var farthest: Int = 0
             var visited: Set<Point> = [start]
             var toVisit: [(Point, Int)] = findNext(from: start, map: map).map { ($0, 1) }
             
@@ -124,8 +124,6 @@ struct Day10: AdventDay {
                 
                 guard !visited.contains(current) else { continue }
                 visited.insert(current)
-                
-                farthest = max(farthest, distance)
                 
                 let currentPipe = map[current.y][current.x]
                 
