@@ -28,11 +28,30 @@ final class Day5Tests: XCTestCase {
     func testSplit() throws {
         let map = Day5.Map(source: "x", destination: "y", sourceRange: 5 ..< 10, destinationRange: 15 ..< 20)
         
-        XCTAssertEqual(map.split(source: 0 ..< 10), [(0 ..< 5), (15 ..< 20)]) // Left overhang
-        XCTAssertEqual(map.split(source: 5 ..< 20), [(10 ..< 20), (15 ..< 20)]) // Right overhang
-        XCTAssertEqual(map.split(source: 0 ..< 20), [(0 ..< 5), (10 ..< 20), (15 ..< 20)]) // Both overhang
-        XCTAssertEqual(map.split(source: 0 ..< 7), [(0 ..< 5), (15 ..< 17)]) // Partial left overhang
-        XCTAssertEqual(map.split(source: 7 ..< 15), [(10 ..< 15), (17 ..< 20)]) // Partial right overhang
+        // Left overhang
+        var result = map.split(source: 0 ..< 10)
+        XCTAssertEqual(result.0, (15 ..< 20))
+        XCTAssertEqual(result.1, [(0 ..< 5)])
+        
+        // Right overhang
+        result = map.split(source: 5 ..< 20)
+        XCTAssertEqual(result.0, (15 ..< 20))
+        XCTAssertEqual(result.1, [(10 ..< 20)])
+        
+        // Both overhang
+        result = map.split(source: 0 ..< 20)
+        XCTAssertEqual(result.0, (15 ..< 20))
+        XCTAssertEqual(result.1, [(0 ..< 5), (10 ..< 20)])
+        
+        // Partial left overhang
+        result = map.split(source: 0 ..< 7)
+        XCTAssertEqual(result.0, (15 ..< 17))
+        XCTAssertEqual(result.1, [(0 ..< 5)])
+        
+        // Partial right overhang
+        result = map.split(source: 7 ..< 15)
+        XCTAssertEqual(result.0, (17 ..< 20))
+        XCTAssertEqual(result.1, [(10 ..< 15)])
     }
     
     func testReal() throws {
@@ -49,12 +68,14 @@ final class Day5Tests: XCTestCase {
         
         for inputRange in inputRanges {
             if let map = maps.first(where: { $0.intersects(source: inputRange) }) {
-                outputRanges.append(contentsOf: map.split(source: inputRange))
+                let result = map.split(source: inputRange)
+                outputRanges.append(result.0)
+                outputRanges.append(contentsOf: result.1)
             } else {
                 outputRanges.append(inputRange)
             }
         }
         
-        XCTAssertEqual(outputRanges, [81 ..< 95, 61 ..< 70, 53 ..< 57])
+        XCTAssertEqual(outputRanges, [81 ..< 95, 53 ..< 57, 61 ..< 70])
     }
 }
