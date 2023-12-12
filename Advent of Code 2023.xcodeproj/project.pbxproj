@@ -21,6 +21,10 @@
 		D1544A232B28960000797879 /* Day12.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1544A222B28960000797879 /* Day12.swift */; };
 		D1544A262B28966C00797879 /* Day12.txt in CopyFiles */ = {isa = PBXBuildFile; fileRef = D1544A252B28965300797879 /* Day12.txt */; };
 		D1544A272B28966C00797879 /* Sample12.txt in CopyFiles */ = {isa = PBXBuildFile; fileRef = D1544A242B28964300797879 /* Sample12.txt */; };
+		D1544A282B28D05B00797879 /* Utilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1AA266C2B1439BE0023310B /* Utilities.framework */; };
+		D1544A292B28D05B00797879 /* Utilities.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D1AA266C2B1439BE0023310B /* Utilities.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D1544A2C2B28D05B00797879 /* Visualization.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1AA26992B143CC20023310B /* Visualization.framework */; };
+		D1544A2D2B28D05B00797879 /* Visualization.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D1AA26992B143CC20023310B /* Visualization.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		D1AA26752B1439BE0023310B /* Utilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1AA266C2B1439BE0023310B /* Utilities.framework */; };
 		D1AA26832B1439E40023310B /* AdventOfCodeError.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1AA26822B1439E40023310B /* AdventOfCodeError.swift */; };
 		D1AA26872B143A390023310B /* Math.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1AA26862B143A390023310B /* Math.swift */; };
@@ -124,6 +128,20 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		D1544A2A2B28D05B00797879 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D1AA26612B14396F0023310B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D1AA266B2B1439BE0023310B;
+			remoteInfo = Utilities;
+		};
+		D1544A2E2B28D05B00797879 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D1AA26612B14396F0023310B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D1AA26982B143CC20023310B;
+			remoteInfo = Visualization;
+		};
 		D1AA26762B1439BE0023310B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D1AA26612B14396F0023310B /* Project object */;
@@ -176,6 +194,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		D1544A302B28D05B00797879 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				D1544A292B28D05B00797879 /* Utilities.framework in Embed Frameworks */,
+				D1544A2D2B28D05B00797879 /* Visualization.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D1AA26E42B143F290023310B /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -367,6 +397,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D1544A282B28D05B00797879 /* Utilities.framework in Frameworks */,
+				D1544A2C2B28D05B00797879 /* Visualization.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -710,10 +742,13 @@
 				D1241C462B268AB800E2D77F /* Sources */,
 				D1241C472B268AB800E2D77F /* Frameworks */,
 				D1241C482B268AB800E2D77F /* Resources */,
+				D1544A302B28D05B00797879 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				D1544A2B2B28D05B00797879 /* PBXTargetDependency */,
+				D1544A2F2B28D05B00797879 /* PBXTargetDependency */,
 			);
 			name = "Day 10 Visualization";
 			productName = "Day 10 Visualization";
@@ -873,7 +908,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1500;
-				LastUpgradeCheck = 1500;
+				LastUpgradeCheck = 1510;
 				TargetAttributes = {
 					D1241C492B268AB800E2D77F = {
 						CreatedOnToolsVersion = 15.0.1;
@@ -1114,6 +1149,16 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		D1544A2B2B28D05B00797879 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D1AA266B2B1439BE0023310B /* Utilities */;
+			targetProxy = D1544A2A2B28D05B00797879 /* PBXContainerItemProxy */;
+		};
+		D1544A2F2B28D05B00797879 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D1AA26982B143CC20023310B /* Visualization */;
+			targetProxy = D1544A2E2B28D05B00797879 /* PBXContainerItemProxy */;
+		};
 		D1AA26772B1439BE0023310B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = D1AA266B2B1439BE0023310B /* Utilities */;
@@ -1191,6 +1236,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEVELOPMENT_ASSET_PATHS = "\"Day 10 Visualization/Preview Content\"";
 				DEVELOPMENT_TEAM = GE3GZ86XX9;
@@ -1284,6 +1330,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_ASSET_PATHS = "\"Day 10 Visualization/Preview Content\"";
 				DEVELOPMENT_TEAM = GE3GZ86XX9;
@@ -1333,12 +1380,70 @@
 		D1AA26652B14396F0023310B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				DEAD_CODE_STRIPPING = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				ONLY_ACTIVE_ARCH = YES;
 			};
 			name = Debug;
 		};
 		D1AA26662B14396F0023310B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				DEAD_CODE_STRIPPING = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
 			};
 			name = Release;
 		};
@@ -1375,9 +1480,12 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = GE3GZ86XX9;
@@ -1470,9 +1578,12 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = GE3GZ86XX9;
@@ -1561,6 +1672,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEVELOPMENT_TEAM = GE3GZ86XX9;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -1637,6 +1749,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = GE3GZ86XX9;
 				ENABLE_NS_ASSERTIONS = NO;
@@ -1701,9 +1814,12 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = GE3GZ86XX9;
@@ -1796,9 +1912,12 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = GE3GZ86XX9;
@@ -1889,6 +2008,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEVELOPMENT_ASSET_PATHS = "\"Visualization Testing/Preview Content\"";
 				DEVELOPMENT_TEAM = GE3GZ86XX9;
@@ -1982,6 +2102,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_ASSET_PATHS = "\"Visualization Testing/Preview Content\"";
 				DEVELOPMENT_TEAM = GE3GZ86XX9;
@@ -2067,6 +2188,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEVELOPMENT_ASSET_PATHS = "\"Visualization 3D Testing/Preview Content\"";
 				DEVELOPMENT_TEAM = GE3GZ86XX9;
@@ -2160,6 +2282,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_ASSET_PATHS = "\"Visualization 3D Testing/Preview Content\"";
 				DEVELOPMENT_TEAM = GE3GZ86XX9;
@@ -2241,6 +2364,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEVELOPMENT_TEAM = GE3GZ86XX9;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -2309,6 +2433,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = GE3GZ86XX9;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -2370,6 +2495,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEVELOPMENT_TEAM = GE3GZ86XX9;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -2442,6 +2568,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = GE3GZ86XX9;
 				ENABLE_NS_ASSERTIONS = NO;
