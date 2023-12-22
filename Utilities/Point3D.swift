@@ -67,12 +67,12 @@ extension Point3D: Comparable {
 
 extension Point3D: CustomDebugStringConvertible {
     public var debugDescription: String {
-        "(\(x),\(y),\(z)"
+        "(\(x),\(y),\(z))"
     }
 }
 
 extension Point3D: CustomStringConvertible {
     public var description: String {
-        "(\(x),\(y),\(z)"
+        "(\(x),\(y),\(z))"
     }
 }
