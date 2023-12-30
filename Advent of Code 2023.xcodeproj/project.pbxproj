@@ -59,6 +59,10 @@
 		D139E6B32B37C73E00B6B189 /* GroundGrassGreen002_NRM_2K.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D139E6B02B37C73E00B6B189 /* GroundGrassGreen002_NRM_2K.jpg */; };
 		D139E6B42B37C73E00B6B189 /* GroundGrassGreen002_BUMP_2K.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D139E6B12B37C73E00B6B189 /* GroundGrassGreen002_BUMP_2K.jpg */; };
 		D139E6B52B37C73E00B6B189 /* GroundGrassGreen002_COL_2K.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D139E6B22B37C73E00B6B189 /* GroundGrassGreen002_COL_2K.jpg */; };
+		D139E6B82B40823800B6B189 /* Day24.swift in Sources */ = {isa = PBXBuildFile; fileRef = D139E6B72B40823800B6B189 /* Day24.swift */; };
+		D139E6BB2B4082AD00B6B189 /* Day24.txt in CopyFiles */ = {isa = PBXBuildFile; fileRef = D139E6BA2B40828A00B6B189 /* Day24.txt */; };
+		D139E6BC2B4082AD00B6B189 /* Sample24.txt in CopyFiles */ = {isa = PBXBuildFile; fileRef = D139E6B92B40827700B6B189 /* Sample24.txt */; };
+		D139E6BF2B40AE6100B6B189 /* BigNumber in Frameworks */ = {isa = PBXBuildFile; productRef = D139E6BE2B40AE6100B6B189 /* BigNumber */; };
 		D1544A232B28960000797879 /* Day12.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1544A222B28960000797879 /* Day12.swift */; };
 		D1544A262B28966C00797879 /* Day12.txt in CopyFiles */ = {isa = PBXBuildFile; fileRef = D1544A252B28965300797879 /* Day12.txt */; };
 		D1544A272B28966C00797879 /* Sample12.txt in CopyFiles */ = {isa = PBXBuildFile; fileRef = D1544A242B28964300797879 /* Sample12.txt */; };
@@ -343,6 +347,7 @@
 				D18B1DAF2B35DBB300DDE16A /* Day21.txt in CopyFiles */,
 				D139E6882B35ECB200B6B189 /* Day22.txt in CopyFiles */,
 				D139E68E2B3737E800B6B189 /* Day23.txt in CopyFiles */,
+				D139E6BB2B4082AD00B6B189 /* Day24.txt in CopyFiles */,
 				D1D9EADC2B1AD63D00C9DD43 /* Sample01.txt in CopyFiles */,
 				D1D9EAE02B1BBCCA00C9DD43 /* Sample02.txt in CopyFiles */,
 				D1D9EAE62B1CD5AA00C9DD43 /* Sample03.txt in CopyFiles */,
@@ -366,6 +371,7 @@
 				D18B1DB02B35DBB300DDE16A /* Sample21.txt in CopyFiles */,
 				D139E6892B35ECB200B6B189 /* Sample22.txt in CopyFiles */,
 				D139E68F2B3737E800B6B189 /* Sample23.txt in CopyFiles */,
+				D139E6BC2B4082AD00B6B189 /* Sample24.txt in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -432,6 +438,9 @@
 		D139E6B02B37C73E00B6B189 /* GroundGrassGreen002_NRM_2K.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = GroundGrassGreen002_NRM_2K.jpg; sourceTree = "<group>"; };
 		D139E6B12B37C73E00B6B189 /* GroundGrassGreen002_BUMP_2K.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = GroundGrassGreen002_BUMP_2K.jpg; sourceTree = "<group>"; };
 		D139E6B22B37C73E00B6B189 /* GroundGrassGreen002_COL_2K.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = GroundGrassGreen002_COL_2K.jpg; sourceTree = "<group>"; };
+		D139E6B72B40823800B6B189 /* Day24.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day24.swift; sourceTree = "<group>"; };
+		D139E6B92B40827700B6B189 /* Sample24.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = Sample24.txt; sourceTree = "<group>"; };
+		D139E6BA2B40828A00B6B189 /* Day24.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = Day24.txt; sourceTree = "<group>"; };
 		D1544A222B28960000797879 /* Day12.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day12.swift; sourceTree = "<group>"; };
 		D1544A242B28964300797879 /* Sample12.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = Sample12.txt; sourceTree = "<group>"; };
 		D1544A252B28965300797879 /* Day12.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = Day12.txt; sourceTree = "<group>"; };
@@ -597,6 +606,7 @@
 				D1D9EAC82B1A5FAC00C9DD43 /* Collections in Frameworks */,
 				D1D9EACF2B1A5FAC00C9DD43 /* Utilities.framework in Frameworks */,
 				D1D9EAC62B1A5FAC00C9DD43 /* Algorithms in Frameworks */,
+				D139E6BF2B40AE6100B6B189 /* BigNumber in Frameworks */,
 				D1D9EACC2B1A5FAC00C9DD43 /* OrderedCollections in Frameworks */,
 				D1D9EACE2B1A5FAC00C9DD43 /* ArgumentParser in Frameworks */,
 				D1D9EACA2B1A5FAC00C9DD43 /* DequeModule in Frameworks */,
@@ -863,6 +873,7 @@
 				D18B1DAB2B35DB3C00DDE16A /* Day21.swift */,
 				D139E6842B35EC5900B6B189 /* Day22.swift */,
 				D139E68A2B37374600B6B189 /* Day23.swift */,
+				D139E6B72B40823800B6B189 /* Day24.swift */,
 				D1D9EAD82B1A752800C9DD43 /* Data */,
 			);
 			path = "Advent of Code";
@@ -894,6 +905,7 @@
 				D18B1DAD2B35DB4A00DDE16A /* Day21.txt */,
 				D139E6862B35EC8C00B6B189 /* Day22.txt */,
 				D139E68D2B3737BF00B6B189 /* Day23.txt */,
+				D139E6BA2B40828A00B6B189 /* Day24.txt */,
 				D1D9EADB2B1A77C900C9DD43 /* Sample01.txt */,
 				D1D9EADF2B1BBCAB00C9DD43 /* Sample02.txt */,
 				D1D9EAE52B1CD5A300C9DD43 /* Sample03.txt */,
@@ -917,6 +929,7 @@
 				D18B1DAE2B35DB5800DDE16A /* Sample21.txt */,
 				D139E6872B35EC9F00B6B189 /* Sample22.txt */,
 				D139E68C2B3737AD00B6B189 /* Sample23.txt */,
+				D139E6B92B40827700B6B189 /* Sample24.txt */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -1106,6 +1119,7 @@
 				D1D9EAC92B1A5FAC00C9DD43 /* DequeModule */,
 				D1D9EACB2B1A5FAC00C9DD43 /* OrderedCollections */,
 				D1D9EACD2B1A5FAC00C9DD43 /* ArgumentParser */,
+				D139E6BE2B40AE6100B6B189 /* BigNumber */,
 			);
 			productName = "Advent of Code";
 			productReference = D1D9EABD2B1A5F7000C9DD43 /* Advent of Code */;
@@ -1190,6 +1204,7 @@
 				D1AA27382B176D070023310B /* XCRemoteSwiftPackageReference "swift-algorithms" */,
 				D1AA27392B176D150023310B /* XCRemoteSwiftPackageReference "swift-collections" */,
 				D1D9EAC42B1A5F9600C9DD43 /* XCRemoteSwiftPackageReference "swift-argument-parser" */,
+				D139E6BD2B40AE6100B6B189 /* XCRemoteSwiftPackageReference "Swift-BigInt" */,
 			);
 			productRefGroup = D1AA266D2B1439BE0023310B /* Products */;
 			projectDirPath = "";
@@ -1399,6 +1414,7 @@
 				D11909F72B2E75E1000C6A0C /* Day16.swift in Sources */,
 				D1D9EB292B24C69400C9DD43 /* Day9.swift in Sources */,
 				D1D9EAE42B1CD56000C9DD43 /* Day3.swift in Sources */,
+				D139E6B82B40823800B6B189 /* Day24.swift in Sources */,
 				D1D9EADE2B1BBC6400C9DD43 /* Day2.swift in Sources */,
 				D1190A0B2B3209F7000C6A0C /* Day19.swift in Sources */,
 				D18B1DAC2B35DB3C00DDE16A /* Day21.swift in Sources */,
@@ -2790,6 +2806,8 @@
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
+					"ACCELERATE_NEW_LAPACK=1",
+					"ACCELERATE_LAPACK_ILP64=1",
 					"$(inherited)",
 				);
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -2855,6 +2873,11 @@
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"ACCELERATE_NEW_LAPACK=1",
+					"ACCELERATE_LAPACK_ILP64=1",
+					"$(inherited)",
+				);
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
@@ -3106,6 +3129,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		D139E6BD2B40AE6100B6B189 /* XCRemoteSwiftPackageReference "Swift-BigInt" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/mkrd/Swift-BigInt.git";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 2.3.0;
+			};
+		};
 		D1AA27382B176D070023310B /* XCRemoteSwiftPackageReference "swift-algorithms" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/apple/swift-algorithms.git";
@@ -3133,6 +3164,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		D139E6BE2B40AE6100B6B189 /* BigNumber */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D139E6BD2B40AE6100B6B189 /* XCRemoteSwiftPackageReference "Swift-BigInt" */;
+			productName = BigNumber;
+		};
 		D1D9EAC52B1A5FAC00C9DD43 /* Algorithms */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = D1AA27382B176D070023310B /* XCRemoteSwiftPackageReference "swift-algorithms" */;
