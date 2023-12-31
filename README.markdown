@@ -5,6 +5,8 @@ My submissions for [Advent of Code 2023](https://adventofcode.com)
 ## Visualizations
 
 * [Closing Pipes - Day 10](https://gerstacker.us/2023/12/10/closing-pipes-for-advent-of-code-2023-day-10.html)
+* [Dropping Blocks - Day 22](https://gerstacker.us/2023/12/22/dropping-blocks-for-advent-of-code-day-22.html)
+* [Wire Clusters - Day 25](https://gerstacker.us/2023/12/25/clusters-of-wires-for-advent-of-code-2023-day-25.html)
 
 ## Links
 
